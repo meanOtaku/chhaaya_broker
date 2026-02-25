@@ -1,0 +1,19 @@
+{
+  "name": "chhaaya_broker",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "aedes": "^1.0.0",
+    "express": "^5.2.1"
+  },
+  "scripts": {
+    "dev": "bun --watch run index.ts"
+  }
+}
