@@ -1,21 +1,19 @@
 {
   "name": "chhaaya_broker",
-  "module": "index.ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "type": "module",
-  "private": true,
-  "devDependencies": {
-    "@types/bun": "latest",
-    "@types/express": "^5.0.6"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js"
   },
-  "peerDependencies": {
-    "typescript": "^5"
-  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "aedes": "^1.0.0",
-    "aedes-server-factory": "^0.2.1",
-    "express": "^5.2.1"
-  },
-  "scripts": {
-    "dev": "bun --watch run index.ts"
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "ws": "^8.19.0"
   }
 }
