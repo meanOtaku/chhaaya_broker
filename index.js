@@ -34,6 +34,10 @@ aedes.on('client', (client) => {
     console.log('Client Connected: ', client.id);
 });
 
+aedes.on('clientDisconnect', function (client) {
+  console.log('Client Disconnected: ', client.id)
+})
+
 aedes.on('publish', (packet, client) => {
     if (client) {
         console.log(`Message Published: ${packet.payload.toString()} on topic: ${packet.topic}`);
